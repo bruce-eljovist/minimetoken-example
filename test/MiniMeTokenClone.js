@@ -26,7 +26,7 @@ function getLogResults(tx, eventName) {
 const fs = require('fs');
 
 function getMiniMeContract(addr) {
-    let rawdata = fs.readFileSync('build/contracts/MiniMeToken.json');
+    let rawdata = fs.readFileSync('./test/MiniMeToken.json');
     let data = JSON.parse(rawdata);
     let abi = data.abi;
 

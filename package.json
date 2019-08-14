@@ -1,0 +1,34 @@
+{
+  "name": "minimetoken-example",
+  "version": "1.0.0",
+  "description": "Example implementation of MiniMeToken for understanding",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "lint": "solium -d contracts/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruce-eljovist/minimetoken-example.git"
+  },
+  "keywords": [
+    "minime",
+    "minimetoken",
+    "truffle",
+    "erc20",
+    "solidity",
+    "test"
+  ],
+  "author": "Park Jongseok",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bruce-eljovist/minimetoken-example/issues"
+  },
+  "homepage": "https://github.com/bruce-eljovist/minimetoken-example#readme",
+  "dependencies": {
+    "minimetoken": "^0.2.0"
+  }
+}

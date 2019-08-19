@@ -40,7 +40,7 @@ contract('MiniMeTokenController', (accounts) => {
     });
 
     it("changeController: eoaController can NOT change controller anymore", async () => {
-        await assertThrow(token.changeController(controller.address, {from: eoaController})); 
+        await assertThrow(token.changeController(controller.address, {from: eoaController}));
     });
 
     it("changeController: only owner can change controller", async () => {

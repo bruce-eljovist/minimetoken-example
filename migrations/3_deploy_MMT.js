@@ -13,8 +13,6 @@ module.exports = async (deployer, network, accounts) => {
     await deployer.deploy(MMT, tokenFactory.address, tokenInitialOwner, {from: eoaController});
     const token = await MMT.deployed();
 
-    console.log(token.address);
-
     await deployer.deploy(MMTController, token.address, {from: owner});
     const controller = await MMTController.deployed();
 

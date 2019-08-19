@@ -24,12 +24,12 @@ contract WhiteListController is MiniMeTokenController {
     }
 
     function generateTokens(address _tokenOwner, uint _amount) public onlyOwner returns (bool) {
-        require(whiteList[_tokenOwner]);
+        require(whiteList[_tokenOwner], "not in the whiteList");
         return super.generateTokens(_tokenOwner, _amount);
     }
 
     function destroyTokens(address _tokenOwner, uint _amount) public onlyOwner returns (bool) {
-        require(whiteList[_tokenOwner]);
+        require(whiteList[_tokenOwner], "not in the whiteList");
         return super.destroyTokens(_tokenOwner, _amount);
     }
 }
